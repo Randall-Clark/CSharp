@@ -1,0 +1,15 @@
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\bin\Debug\net8.0\Debuggers.exe
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\bin\Debug\net8.0\Debuggers.deps.json
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\bin\Debug\net8.0\Debuggers.runtimeconfig.json
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\bin\Debug\net8.0\Debuggers.dll
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\bin\Debug\net8.0\Debuggers.pdb
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\obj\Debug\net8.0\Debuggers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\obj\Debug\net8.0\Debuggers.AssemblyInfoInputs.cache
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\obj\Debug\net8.0\Debuggers.AssemblyInfo.cs
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\obj\Debug\net8.0\Debuggers.csproj.CoreCompileInputs.cache
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\obj\Debug\net8.0\Debuggers.sourcelink.json
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\obj\Debug\net8.0\Debuggers.dll
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\obj\Debug\net8.0\refint\Debuggers.dll
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\obj\Debug\net8.0\Debuggers.pdb
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\obj\Debug\net8.0\Debuggers.genruntimeconfig.cache
+C:\Proj\Githubs\CSharp\CS-2\Debuggers\Debuggers\obj\Debug\net8.0\ref\Debuggers.dll
