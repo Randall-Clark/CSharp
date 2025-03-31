@@ -1,47 +1,43 @@
-🚗 Exercice C# – Classes, Objets, Statique, Constructeurs et Surcharge
-🎯 Objectif
-Cet exercice a pour but de mettre en pratique les notions fondamentales de la programmation orientée objet en C#, notamment :
+# 🚗 Exercice C# – Gestion d’un Parc Automobile
 
-Les classes
+Cet exercice permet de mettre en pratique les bases de la programmation orientée objet en **C#**, notamment :
 
-Les objets
+- ✅ Classes & Objets
+- ✅ Membres `static`
+- ✅ Constructeurs
+- ✅ Surcharge de constructeurs (`Overload Constructors`)
 
-Les membres statiques
+---
 
-Les constructeurs
+## 📚 Contexte
 
-La surcharge de constructeurs
+Le but est de créer un système simple de gestion de voitures dans un garage. Chaque voiture possède un modèle, une marque, une année de fabrication et un kilométrage.
 
-🧠 Contexte
-Tu dois créer un système de gestion de voitures pour un garage. Chaque voiture aura un modèle, une marque, une année de fabrication et un nombre de kilomètres parcourus.
+---
 
-📋 Consignes
-Créer une classe Car avec les propriétés suivantes :
+## 💻 Objectifs
 
-string Model
+- Créer une classe `Car` avec les propriétés suivantes :
+    - `string Model`
+    - `string Brand`
+    - `int ProductionYear`
+    - `double Kilometers`
 
-string Brand
+- Ajouter un champ **statique** `CarsCount` qui compte le nombre total de voitures créées.
 
-int ProductionYear
+- Implémenter :
+    - Un **constructeur principal** prenant tous les paramètres.
+    - Un **constructeur surchargé** prenant uniquement `Model` et `Brand`, avec des valeurs par défaut (`2020`, `0`) pour les autres.
 
-double Kilometers
+- Incrémenter `CarsCount` à chaque création d’objet.
 
-Ajouter un champ statique CarsCount qui compte le nombre total de voitures créées.
+- Ajouter une méthode `DisplayInfo()` qui affiche les informations de la voiture dans la console.
 
-Créer un constructeur principal avec tous les paramètres nécessaires (Model, Brand, ProductionYear, Kilometers).
+---
 
-Créer un constructeur surchargé qui ne prend que Model et Brand, et qui utilise des valeurs par défaut pour les autres (ProductionYear = 2020, Kilometers = 0). Ce constructeur doit utiliser this(...) pour appeler l'autre.
+## 🧪 Exemple d’utilisation dans `Main`
 
-Incrémenter le compteur CarsCount à chaque création d’objet dans le constructeur principal.
-
-Créer une méthode DisplayInfo() pour afficher les informations de chaque voiture dans la console.
-
-Dans la méthode Main, créer plusieurs objets Car en utilisant les deux types de constructeurs. Afficher les informations de chaque voiture et le nombre total de voitures créées.
-
-📌 Exemple d’utilisation dans Main
-csharp
-Copy
-Edit
+```csharp
 Car car1 = new Car("Continental GT", "Bentley", 2022, 100);
 Car car2 = new Car("Escalade", "Cadillac", 2025, 10);
 Car car3 = new Car("GLS Maybach", "Mercedes");
