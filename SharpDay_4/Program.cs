@@ -15,7 +15,37 @@ class Program
 {
     static void Main(string[] args)
     {
+        Shelter shelter = new Shelter();
+
+        // Créer un tableau d'animaux
+        Animal[] animals = new Animal[]
+        {
+            new Dog("Rex"),
+            new Cat("Luna"),
+            new Dog("Buddy"),
+            new Cat("Mimi")
+        };
+
+        // Appeler la méthode IntroduceAnimal pour chaque animal
+        foreach (Animal animal in animals)
+        {
+            shelter.IntroduceAnimal(animal);
+            Console.WriteLine(); // Pour espacer un peu les sorties
+        }
+    }
+}
+
+public class Shelter
+{
+    public Shelter()
+    {
         
+    }
+
+    public void IntroduceAnimal(Animal animals)
+    {
+        animals.MakeSound();
+        animals.DisplayInfo();
     }
 }
 
@@ -49,7 +79,7 @@ public class Dog : Animal
 
     public override void DisplayInfo()
     {
-        Console.WriteLine($"I am a {Name}");
+        Console.WriteLine($"I am a Dog name{Name}");
     }
 }
 
@@ -63,7 +93,7 @@ public class Cat : Animal
 
     public override void MakeSound()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("Meow!");
     }
 
     public override void DisplayInfo()
