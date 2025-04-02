@@ -35,19 +35,65 @@ Le but est de créer un système simple de gestion de voitures dans un garage. C
 
 ---
 
-## 🧪 Exemple d’utilisation dans `Main`
+# 🧪Resultat de l'exercice
 
-```csharp
-Car car1 = new Car("Continental GT", "Bentley", 2022, 100);
-Car car2 = new Car("Escalade", "Cadillac", 2025, 10);
-Car car3 = new Car("GLS Maybach", "Mercedes");
-Car car4 = new Car("Van", "Toyota");
-Car car5 = new Car("Fusion", "Ford");
+# 🧾 Exercice C# – Interfaces, Polymorphisme, List et ToString
 
-car1.DisplayInfo();
-car2.DisplayInfo();
-car3.DisplayInfo();
-car4.DisplayInfo();
-car5.DisplayInfo();
+Ce projet met en pratique plusieurs notions clés de la programmation orientée objet en C# :
 
-Console.WriteLine($"Nombre total de voitures créées : {Car.CarsCount}");
+- ✅ Interface (`IProduct`)
+- ✅ Polymorphisme avec `List<IProduct>`
+- ✅ Redéfinition de `ToString()`
+- ✅ Liste d'objets (`List<T>`)
+- ✅ Manipulation d'objets dynamiquement (ajout, affichage, calcul)
+
+---
+
+## ✅ Ce qui est bien maîtrisé
+
+| Élément                          | Évaluation |
+|----------------------------------|------------|
+| **Interface `IProduct`**         | Bien déclarée avec une propriété `Name` et une méthode `GetPrice()` |
+| **Implémentation de l’interface**| `Book` et `Electronic` l’implémentent correctement |
+| **Utilisation de `ToString()`**  | Chaque classe a une méthode propre et lisible |
+| **Polymorphisme avec `List`**    | Bien utilisé dans la classe `Order` |
+| **Encapsulation fonctionnelle**  | Ajout et affichage des produits bien faits |
+| **Programme test complet**       | `Main()` instancie, ajoute, affiche et calcule comme demandé |
+
+---
+
+## ⚠️ Améliorations possibles
+
+| Point à améliorer | Pourquoi c’est important |
+|-------------------|--------------------------|
+| 🔸 `PrintInvoice()` non utilisée | Soit la supprimer, soit l’utiliser pour afficher proprement |
+| 🔸 Conventions C# | Une variable locale comme `TotalPrice` devrait s’écrire `totalPrice` |
+| 🔸 Champs publics | `Author`, `Brand`, `Price` devraient être des propriétés pour respecter l'encapsulation |
+| 🔸 Exploiter davantage l’interface | Tu pourrais afficher `Name` via l’interface pour plus de cohérence |
+
+---
+
+## 🧠 Note finale
+
+| Critère                          | Points |
+|----------------------------------|--------|
+| Fonctionnalité / logique         | 5 / 5  |
+| Interface & Polymorphisme        | 5 / 5  |
+| `ToString()` & affichage         | 3 / 3  |
+| Conventions, propreté            | 2 / 3  |
+| Structure & encapsulation        | 2.5 / 4  |
+
+🎯 **Total : 17.5 / 20**
+
+---
+
+## ✅ Idées pour aller plus loin
+
+- Ajouter une interface `IDiscountable` avec une méthode `GetDiscountedPrice()`
+- Trier les produits par prix
+- Sauvegarder la facture dans un fichier texte
+- Ajouter une catégorie de produit supplémentaire (ex: `Food`, `Subscription`, etc.)
+
+---
+
+🔧 Bravo pour ce projet bien structuré ! Tu démontres une bonne montée en compétence 👏
