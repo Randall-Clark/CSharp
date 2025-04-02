@@ -11,31 +11,35 @@ Cet exercice permet de mettre en pratique les bases de la programmation orienté
 
 ## 📚 Contexte
 
-Le but est de créer un système simple de gestion de voitures dans un garage. Chaque voiture possède un modèle, une marque, une année de fabrication et un kilométrage.
+Créer un système de facturation simplifié pour une boutique en ligne
 
 ---
 
-## 💻 Objectifs
+## 💻 Objectifs : Créer un système de facturation simplifié pour une boutique en ligne
 
-- Créer une classe `Car` avec les propriétés suivantes :
-    - `string Model`
-    - `string Brand`
-    - `int ProductionYear`
-    - `double Kilometers`
+- Crée une interface IProduct avec :
+  - Une propriété string Name
+  - Une méthode double GetPrice()
 
-- Ajouter un champ **statique** `CarsCount` qui compte le nombre total de voitures créées.
+- Crée une classe Book qui implémente IProduct :
+  - Champs : Title, Author, Price
+  - Implémente ToString() pour afficher : "Book: [Title] by [Author] - $[Price]"
 
-- Implémenter :
-    - Un **constructeur principal** prenant tous les paramètres.
-    - Un **constructeur surchargé** prenant uniquement `Model` et `Brand`, avec des valeurs par défaut (`2020`, `0`) pour les autres.
+- Crée une classe Electronic qui implémente IProduct :
+  - Champs : Name, Brand, Price
+  - Implémente ToString() pour afficher : "Electronic: [Name] - [Brand] - $[Price]"
 
-- Incrémenter `CarsCount` à chaque création d’objet.
+- Crée une classe Order qui contient une List<IProduct> Products
+  - Méthode AddProduct(IProduct product)
+  - Méthode PrintInvoice() qui affiche tous les produits (grâce à ToString()) et le total
 
-- Ajouter une méthode `DisplayInfo()` qui affiche les informations de la voiture dans la console.
-
+- Dans Main() :
+  - Crée une commande
+  - Ajoute des Book et des Electronic
+  - Appelle PrintInvoice() pour voir les produits et le total
 ---
 
-# 🧪Resultat de l'exercice
+# 🧪Notation Final de l'exercice
 
 # 🧾 Exercice C# – Interfaces, Polymorphisme, List et ToString
 
@@ -95,5 +99,3 @@ Ce projet met en pratique plusieurs notions clés de la programmation orientée 
 - Ajouter une catégorie de produit supplémentaire (ex: `Food`, `Subscription`, etc.)
 
 ---
-
-🔧 Bravo pour ce projet bien structuré ! Tu démontres une bonne montée en compétence 👏
