@@ -19,15 +19,9 @@ class Program
     {
         int number = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("{0}x1 = {1} ",number, number *1);
-        Console.WriteLine("{0}x2 = {1}",number, number *2);
-        Console.WriteLine("{0}x3 = {1}",number, number *3);
-        Console.WriteLine("{0}x4 = {1}",number, number *4);
-        Console.WriteLine("{0}x5 = {1}",number, number *5);
-        Console.WriteLine("{0}x6 = {1}",number, number *6);
-        Console.WriteLine("{0}x7 = {1}",number, number *7);
-        Console.WriteLine("{0}x8 = {1}",number, number *8);
-        Console.WriteLine("{0}x9 = {1}",number, number *9);
-        Console.WriteLine("{0}x10 = {1}",number, number *10);
+        for (int i = 0; i <= 12; i++)
+        {
+            Console.WriteLine("{0}x{1}= {2}", number, i, number * i);
+        }
     }
 }
